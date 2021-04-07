@@ -17,9 +17,9 @@ def main():
     is_failed = result.stdout.decode('utf-8')
     if is_failed:
         print(
-            f'{colors.BLACKFONE}Flake8 -------------> {colors.FAILED}Failed!')
+            f'{colors.BLUE}Flake8 -------------> {colors.FAILED}Failed!')
         print(f'{colors.RED}Please correct following linting errors:')
-        print(f'{colors.YELLOW}{result.stdout.decode("utf-8")}{colors.RESET}')
+        print(f'{colors.WARNING}{result.stdout.decode("utf-8")}{colors.RESET}')
         sys.exit(1)
     else:
         print(
