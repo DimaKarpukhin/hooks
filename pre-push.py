@@ -16,12 +16,14 @@ def main():
     result = subprocess.run([flake8_path], stdout=subprocess.PIPE)
     is_failed = result.stdout.decode('utf-8')
     if is_failed:
-        print(f'{colors.CYAN}Flake8 -------------> {colors.FAILED}Failed!')
+        print(
+            f'{colors.BLACKFONE}{colors.BLUE}Flake8 -------------> {colors.FAILED}Failed!')
         print(f'{colors.RED}Please correct following linting errors:')
         print(f'{colors.YELLOW}{result.stdout.decode("utf-8")}{colors.RESET}')
         sys.exit(1)
     else:
-        print(f'{colors.BLUE}Flake8 -------------> {colors.PASSED}Passed!')
+        print(
+            f'{colors.BLACKFONE}{colors.BLUE}Flake8 -------------> {colors.PASSED}Passed!')
         print(f"{colors.GREEN}'git push' succeeded!")
         sys.exit(0)
 
