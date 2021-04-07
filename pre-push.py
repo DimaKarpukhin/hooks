@@ -6,8 +6,9 @@ import sys
 
 """
 Installing pre-push Flake8 hook throug command line:
- 1. cd hooks && cat /dev/null > .git/hooks/pre-push
- 2. ln -s -f ../../pre-push.py .git/hooks/pre-push && chmod +x pre-push.py
+ 1. git clone https://github.com/DimaKarpukhin/hooks.git
+ 2. cd hooks && cat /dev/null > .git/hooks/pre-push
+ 3. ln -s -f ../../pre-push.py .git/hooks/pre-push && chmod +x pre-push.py
 """
 
 
@@ -21,8 +22,7 @@ def main():
               + color.FAILED + 'Failed!')
         print(
             f'{color.RED}Please correct following linting errors:')
-        print(
-            f'{color.FAILED}{result.stdout.decode("utf-8")}{color.RESET}                    ')
+        print(f'{color.FAILED}{result.stdout.decode("utf-8")}{color.RESET}')
         sys.exit(1)
     else:
         print(color.BLUE + '\nFlake8'
