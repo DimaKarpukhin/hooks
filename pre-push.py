@@ -17,13 +17,13 @@ def main():
     is_failed = result.stdout.decode('utf-8')
     if is_failed:
         print(
-            f'{colors.BLUEFONE}Flake8{colors.BLUE} ---------------> {colors.FAILED}Failed!')
+            f'{colors.BLUEFONE}Flake8{colors.BLUE} -------------> {colors.FAILED}Failed!')
         print(f'{colors.RED}Please correct following linting errors:')
         print(f'{colors.FAILED}{result.stdout.decode("utf-8")}{colors.RESET}')
         sys.exit(1)
     else:
         print(
-            f'{colors.BLUEFONE}Flake8{colors.BLUE} ---------------> {colors.PASSED}Passed!')
+            f'{colors.BLUEFONE}Flake8{colors.BLUE} -------------> {colors.PASSED}Passed!')
         print(f"{colors.GREEN}'git push' succeeded!{colors.RESET}")
         sys.exit(0)
 
