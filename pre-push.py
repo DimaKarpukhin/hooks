@@ -25,7 +25,7 @@ def main():
     else:
         print(color.BLUEFONE + 'Flake8'
               + color.BLUE + '------------------------>'
-              + color.FAILED + 'Passed!')
+              + color.PASSED + 'Passed!')
         print(f"{color.GREEN}'git push' succeeded!{color.RESET}")
         sys.exit(0)
 
