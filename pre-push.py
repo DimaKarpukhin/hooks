@@ -7,7 +7,7 @@ import sys
 """
 Installing pre-push Flake8 hook throug command line:
  1. cd hooks && cat /dev/null > .git/hooks/pre-push
- 2. ln -s -f ../../pre-push.py .git/hooks/pre-push
+ 2. ln -s -f ../../pre-push.py .git/hooks/pre-push && chmod +x pre-push.py
 """
 
 

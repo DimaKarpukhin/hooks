@@ -1,10 +1,11 @@
 def say_hello(name):
-    print(f'Hello {name} =)')
+    print(
+        f'Hello {name} --------------------------------------------------------------=)')
 
 
 def factorial(num):
     for x in range(1, num):
-        res = x * (x+1)
+        res = x * (x + 1)
     return res
 
 
