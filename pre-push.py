@@ -1,7 +1,7 @@
 #!/usr/local/bin/python3
 
 import subprocess
-import colors
+import color
 import sys
 
 """
@@ -16,15 +16,14 @@ def main():
     result = subprocess.run([flake8_path], stdout=subprocess.PIPE)
     is_failed = result.stdout.decode('utf-8')
     if is_failed:
-        print(
-            f'{colors.BLUEFONE}Flake8{colors.BLUE} -------------> {colors.FAILED}Failed!')
-        print(f'{colors.RED}Please correct following linting errors:')
-        print(f'{colors.FAILED}{result.stdout.decode("utf-8")}{colors.RESET}')
+        print(f'{color.BLUEFONE}Flake8{color.BLUE} ---------> {color.FAILED}Failed!')
+        print(f'{color.RED}Please correct following linting errors:')
+        print(f'{color.FAILED}{result.stdout.decode("utf-8")}{color.RESET}')
         sys.exit(1)
     else:
         print(
-            f'{colors.BLUEFONE}Flake8{colors.BLUE} -------------> {colors.PASSED}Passed!')
-        print(f"{colors.GREEN}'git push' succeeded!{colors.RESET}")
+            f'{color.BLUEFONE}Flake8{color.BLUE} ---------> {color.PASSED}Passed!')
+        print(f"{color.GREEN}'git push' succeeded!{color.RESET}")
         sys.exit(0)
 
 
