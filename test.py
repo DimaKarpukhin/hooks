@@ -5,7 +5,6 @@ def say_hello(name):
 def factorial(num):
     for x in range(1, num):
         res = x * (x+1)
-
     return res
 
 
