@@ -1,5 +1,5 @@
 # Pre-push hook for checking pep8 style convention
-#### Be sure you have Flake8 plugin installed
+### Be sure you have Flake8 plugin installed first!
 ### Installing throug command line(copy & paste):
  * git clone https://github.com/DimaKarpukhin/pre-push-hook.git
  * cd pre-push-hook && cat /dev/null > .git/hooks/pre-push
