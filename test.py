@@ -1,6 +1,5 @@
 def say_hello_to(name):
-    print(
-        f'Hello {name}! Fantastic morning!')
+    print(f"Hello {name}! Fantastic morning!               ")
 
 
 def factorial(num):
@@ -10,4 +9,4 @@ def factorial(num):
 
 
 if __name__ == "__main__":
-    say_hello_to('Leo')
+    say_hello_to("Leo")
