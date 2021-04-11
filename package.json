@@ -1,0 +1,10 @@
+{
+    "husky": {
+        "hooks": {
+            "prepush": "npm run test"
+        }
+    },
+    "devDependencies": {
+        "husky": "^6.0.0"
+    }
+}
