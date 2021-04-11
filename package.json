@@ -2,7 +2,7 @@
     "husky": {
         "hooks": {
             "pre-commit": "npm run test",
-            "pre-push": "npm run test"
+            "pre-push": "echo '[Husky] pre-commit'"
         }
     },
     "devDependencies": {
