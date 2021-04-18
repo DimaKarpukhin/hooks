@@ -7,8 +7,13 @@ repos:
     rev: v0.812
     hooks:
     -   id: mypy 
--   repo: https://github.com/pre-commit/pre-commit-hooks
+-   repo: https://github.com/asottile/reorder_python_imports
     rev: v2.4.0
+    hooks:
+    -   id: reorder-python-imports
+        args: [--application-directories, '.:src', --py36-plus]    
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.4.0
     hooks:
         # Prevent giant files from being committed
     -   id: check-added-large-files
@@ -18,6 +23,8 @@ repos:
     -   id: detect-private-key  
         # Simply check whether the files parse as valid python
     -   id: check-ast
+        # Checks yaml files for parseable syntax
+    -   id: check-yaml
       
         
       
