@@ -17,8 +17,6 @@ repos:
     hooks:
         # Prevent giant files from being committed
     -   id: check-added-large-files
-        # Checks a common error of defining a docstring after code
-    -   id: check-docstring-first
         # Detects the presence of private keys
     -   id: detect-private-key  
         # Simply check whether the files parse as valid python

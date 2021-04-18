@@ -1,5 +1,4 @@
 """ Hello        """
-import numpy as np
 
 
 def say_hello_to(name):
