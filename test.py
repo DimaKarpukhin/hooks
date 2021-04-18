@@ -1,6 +1,6 @@
 def say_hello_to(name):
     print(
-        f"Hello {name}! Fantastic morning!")
+        f"Hello {name}! Fantastic morning! ")
 
 
 def factorial(num):
