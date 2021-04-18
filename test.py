@@ -5,9 +5,6 @@ def say_hello_to(name):
     print(f"Hello {name}! Fantastic morning! ")
 
 
-""" YTrytryhgfhgfhg """
-
-
 def factorial(num):
     for x in range(1, num):
         res = x * (x + 1)
