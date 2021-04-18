@@ -1,6 +1,6 @@
 repos:
     - repo: https://github.com/pre-commit/pre-commit-hooks
-        rev: 3.4.0
+        rev: v2.12.1
         hooks:
         # Prevent giant files from being committed
         - id: check-added-large-files
@@ -14,6 +14,6 @@ repos:
         - id: check-docstring-first
 
     - repo: https://gitlab.com/pycqa/flake8
-        rev: v3.9.0
+        rev: 3.9.0
         hooks: 
         - id: flake8
