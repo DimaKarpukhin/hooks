@@ -11,6 +11,5 @@ def factorial(num):
     return res
 
 
-""" YTrytry   """
 if __name__ == "__main__":
     say_hello_to("Leo")
