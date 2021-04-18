@@ -1,7 +1,7 @@
 repos:
     - repo: https://github.com/pre-commit/pre-commit-hooks
-        rev: v2.4.0
-        hooks:
+    rev: v2.4.0
+    hooks:
         # Prevent giant files from being committed
         - id: check-added-large-files
         # Detects the presence of private keys
@@ -13,8 +13,8 @@ repos:
         # Checks a common error of defining a docstring after code
         - id: check-docstring-first
     - repo: https://gitlab.com/pycqa/flake8
-        rev: 3.9.0
-        hooks: 
+    rev: 3.9.0
+    hooks: 
         - id: flake8
 
 
