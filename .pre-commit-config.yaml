@@ -1,5 +1,5 @@
 repos:
-    - repo: https://github.com/pre-commit/pre-commit-hooks
+- repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v2.4.0
     hooks:
       # Simply check whether the files parse as valid python
@@ -10,11 +10,11 @@ repos:
       - id: detect-private-key    
       # Checks a common error of defining a docstring after code
       - id: check-docstring-first
-    - repo: https://gitlab.com/pycqa/flake8
+  - repo: https://gitlab.com/pycqa/flake8
     rev: 3.9.0
     hooks: 
       - id: flake8
-    - repo: https://github.com/pre-commit/mirrors-mypy
+  - repo: https://github.com/pre-commit/mirrors-mypy
     rev: v0.812
     hooks:
     -   id: mypy    
