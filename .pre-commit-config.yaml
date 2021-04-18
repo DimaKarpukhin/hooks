@@ -4,26 +4,33 @@ repos:
     hooks:
         # Prevent giant files from being committed
     -   id: check-added-large-files
+        stages: [commit]
         # Detects the presence of private keys
     -   id: detect-private-key  
+        stages: [commit]
         # Simply check whether the files parse as valid python
     -   id: check-ast
+        stages: [commit]
         # Checks yaml files for parseable syntax
     -   id: check-yaml
+        stages: [commit]
 -   repo: https://github.com/asottile/reorder_python_imports
     rev: v2.4.0
     hooks:
     -   id: reorder-python-imports
         args: [--application-directories, '.:src', --py36-plus]  
+        stages: [commit]
 -   repo: https://github.com/pre-commit/mirrors-mypy
     rev: v0.812
     hooks:
-    -   id: mypy           
+    -   id: mypy 
+        stages: [commit]          
 -   repo: https://gitlab.com/pycqa/flake8
     rev: 3.9.0
     hooks: 
     -   id: flake8
-        additional_dependencies: [flake8-docstrings]           
+        additional_dependencies: [flake8-docstrings]  
+        stages: [push]         
       
      
 
