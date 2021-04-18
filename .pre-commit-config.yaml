@@ -1,19 +1,4 @@
 repos:
--   repo: https://gitlab.com/pycqa/flake8
-    rev: 3.9.0
-    hooks: 
-    -   id: flake8
-        additional_dependencies: 
-        -   flake8-docstrings
--   repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v0.812
-    hooks:
-    -   id: mypy 
--   repo: https://github.com/asottile/reorder_python_imports
-    rev: v2.4.0
-    hooks:
-    -   id: reorder-python-imports
-        args: [--application-directories, '.:src', --py36-plus]    
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v3.4.0
     hooks:
@@ -25,8 +10,20 @@ repos:
     -   id: check-ast
         # Checks yaml files for parseable syntax
     -   id: check-yaml
-      
-        
+-   repo: https://github.com/asottile/reorder_python_imports
+    rev: v2.4.0
+    hooks:
+    -   id: reorder-python-imports
+        args: [--application-directories, '.:src', --py36-plus]     
+-   repo: https://gitlab.com/pycqa/flake8
+    rev: 3.9.0
+    hooks: 
+    -   id: flake8
+        additional_dependencies: [flake8-docstrings]
+-   repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v0.812
+    hooks:
+    -   id: mypy           
       
      
 
