@@ -1,8 +1,9 @@
 repos:
 -   repo: https://github.com/DimaKarpukhin/commit-msg-hook.git
-    rev: a6e1f095dddc89845990bbee35480d1667da7420
+    rev: 1d70498f717badae3137839f86008c697bfae05d
     hooks:
     -   id: commit-msg-hook
+        entry: commit-msg.py
         stages: [commit-msg]
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v3.4.0
