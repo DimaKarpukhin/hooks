@@ -1,9 +1,9 @@
 repos:
-# -   repo: https://github.com/DimaKarpukhin/commit-msg-hook.git
-#     rev: v0.0.1
-#     hooks:
-#     -   id: commit-msg-hook
-#         stages: [commit-msg]
+-   repo: https://github.com/DimaKarpukhin/commit-msg-hook.git
+    rev: 577deb865bbd8380dae6d8eda2f3f6b326bd5696
+    hooks:
+    -   id: commit-msg-hook
+        stages: [commit-msg]
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v3.4.0
     hooks:
@@ -33,7 +33,7 @@ repos:
     -   id: mypy
         stages: [commit]
 -   repo: https://gitlab.com/pycqa/flake8
-    rev: 3.9.0
+    rev: 3.9.1
     hooks:
     -   id: flake8
         additional_dependencies: [flake8-docstrings]
