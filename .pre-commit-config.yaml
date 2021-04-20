@@ -3,7 +3,7 @@ repos:
     rev: 415570f2240f89ea62cd605b6065836817767442
     hooks:
     -   id: commit-msg-hook
-        stages: [prepare-commit-msg]
+        stages: [push]
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v3.4.0
     hooks:
@@ -18,7 +18,7 @@ repos:
         stages: [push]
         # Checks yaml files for parseable syntax
     -   id: check-yaml
-        stages: [push]
+        stages: [commit-msg]
         # Trims trailing whitespaces
     -   id: trailing-whitespace
         stages: [push]
@@ -32,13 +32,13 @@ repos:
     rev: v0.812
     hooks:
     -   id: mypy
-        stages: [push]
+        stages: [commit-msg]
 -   repo: https://gitlab.com/pycqa/flake8
     rev: 3.9.1
     hooks:
     -   id: flake8
         additional_dependencies: [flake8-docstrings]
-        stages: [push]
+        stages: [commit-msg]
 
 
 
