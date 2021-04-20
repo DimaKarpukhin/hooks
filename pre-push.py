@@ -1,11 +1,11 @@
 #!/usr/local/bin/python3
-
 import subprocess
-import color
 import sys
 
+import color
+
 """
-Installing pre-push Flake8 hook throug command line(copy & paste):
+Installing pre-push Flake8 hook throug command line(copy & paste)    :
  1. git clone https://github.com/DimaKarpukhin/pre-push-hook.git
  2. cd pre-push-hook && cat /dev/null > .git/hooks/pre-push
  3. ln -s -f ../../pre-push.py .git/hooks/pre-push && chmod +x pre-push.py
