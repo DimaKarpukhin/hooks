@@ -3,7 +3,6 @@ repos:
     rev: a6e1f095dddc89845990bbee35480d1667da7420
     hooks:
     -   id: commit-msg-hook
-        entry: hooked-msg.py
         stages: [commit-msg]
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v3.4.0
