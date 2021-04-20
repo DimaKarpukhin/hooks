@@ -19,6 +19,7 @@ repos:
         stages: [push]
         # Checks yaml files for parseable syntax
     -   id: check-yaml
+        stages: [push]
         # Trims trailing whitespaces
     -   id: trailing-whitespace
         stages: [push]
