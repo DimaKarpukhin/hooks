@@ -17,7 +17,7 @@ def main():
     result = subprocess.run([flake8_path], stdout=subprocess.PIPE)
     is_failed = result.stdout.decode('utf-8')
     if is_failed:
-        print(color.BLUE + '\nFlake8'
+        print(color.BLUE + "\nFlake8"
               + color.BLUE + ' ------------------------> '
               + color.FAILED + 'Failed!')
         print(
