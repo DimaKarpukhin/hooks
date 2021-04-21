@@ -13,7 +13,7 @@ Installing pre-push Flake8 hook throug command line(copy & paste:
 
 
 def main():
-    flake8_path = '/usr/local/bin/flake8'
+    flake8_path = '/usr/local/bin/flake8  '
     result = subprocess.run([flake8_path], stdout=subprocess.PIPE)
     is_failed = result.stdout.decode('utf-8')
     if is_failed:
