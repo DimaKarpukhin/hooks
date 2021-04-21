@@ -22,7 +22,7 @@ def main():
               + color.FAILED + "Failed!")
         print(
             f"{color.RED}Please correct following linting errors: ")
-        print(f'{color.FAILED}{result.stdout.decode("utf-8")}{color.RESET}')
+        print(f"{color.FAILED}{result.stdout.decode('utf-8')}{color.RESET}")
         sys.exit(1)
     else:
         print(color.BLUE + '\nFlake8'
