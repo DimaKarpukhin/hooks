@@ -1,10 +1,8 @@
 repos:
 -   repo: https://github.com/DimaKarpukhin/commit-msg-hook.git
-    rev: 77b2773d428d609f00b5304acebe70986d4dce3a
+    rev: v0.0.9
     hooks:
     -   id: commit-msg-hook
-        always_run: true
-        args: [.git/COMMIT_EDITMSG]
         stages: [commit-msg]
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v3.4.0
