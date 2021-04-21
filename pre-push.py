@@ -25,8 +25,8 @@ def main():
         print(f"{color.FAILED}{result.stdout.decode('utf-8')}{color.RESET}")
         sys.exit(1)
     else:
-        print(color.BLUE + '\nFlake8'
-              + color.BLUE + ' ------------------------> '
+        print(color.BLUE + "\nFlake8"
+              + color.BLUE + " ------------------------> "
               + color.PASSED + 'Passed!')
         print(f"{color.CYAN}'git push' succeeded!\n{color.RESET}")
         sys.exit(0)
