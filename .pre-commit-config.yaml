@@ -3,7 +3,8 @@ repos:
     rev: ae85b9957bdf129fa859eff0205b777ff92812f8
     hooks:
     -   id: commit-msg-hook
-        stages: [commit-msg]
+        always_run: true
+        stages: [push]
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v3.4.0
     hooks:
