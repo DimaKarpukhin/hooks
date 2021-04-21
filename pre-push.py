@@ -18,7 +18,7 @@ def main():
     is_failed = result.stdout.decode('utf-8')
     if is_failed:
         print(color.BLUE + "\nFlake8"
-              + color.BLUE + ' ------------------------> '
+              + color.BLUE + " ------------------------> "
               + color.FAILED + 'Failed!')
         print(
             f'{color.RED}Please correct following linting errors: ')
