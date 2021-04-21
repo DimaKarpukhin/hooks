@@ -1,6 +1,6 @@
 repos:
 -   repo: https://github.com/DimaKarpukhin/commit-msg-hook.git
-    rev: c36d4845b00c6a781be79a899b438658c984092b
+    rev: aa73c9b58dad543e0bfee5df8f8bf1f92f041b2f
     hooks:
     -   id: commit-msg-hook
         args: [.git/COMMIT_EDITMSG]
