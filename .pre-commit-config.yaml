@@ -3,6 +3,7 @@ repos:
     rev: 77b2773d428d609f00b5304acebe70986d4dce3a
     hooks:
     -   id: commit-msg-hook
+        entry: .git/COMMIT_EDITMSG
         args: [.git/COMMIT_EDITMSG]
         stages: [commit-msg]
 -   repo: https://github.com/pre-commit/pre-commit-hooks
